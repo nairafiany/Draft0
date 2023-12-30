@@ -1,0 +1,252 @@
+
+.gradient-background {
+    background: linear-gradient(300deg, #EBE3D5 , #B0A695, #776B5D);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+
+
+  .bree-font, .bree-font a.nav-link {
+    font-family: 'Dosis', sans-serif;
+    color: #EBE3D5 !important;
+    font-size: large;
+    transition: text-shadow 0.5s ease; /* Smooth transition for the glow effect */
+    text-shadow: 0 0 5px transparent; /* Default state with no glow */
+}
+.logo {
+    font-family: 'Dosis', sans-serif;
+    font: 2rem;
+
+
+
+
+}
+.bree-font:hover, .bree-font a.nav-link:hover {
+    text-shadow: 0 0 8px #EBE3D5; /* Glowing effect on hover */
+}
+
+.gradient-text {
+    background: linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+    
+    
+}
+.nav-item{
+
+    position: relative;
+}
+.nav-item::after{
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: #5a5141;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+.nav-item:hover::after{
+    opacity: 1;
+}
+
+  
+  .responsive-title {
+    font-size: 2rem; /* Default font size */
+  }
+  
+/* ... your existing styles ... */
+
+@media (max-width: 992px) {
+    .responsive-title {
+      font-size: 2rem;
+      padding: 0;
+      margin: 0;
+      padding-left: 0.9%;
+    }
+  
+    .navbar .container > .row > div {
+      justify-content: flex-start !important; /* Align all items to the left */
+      
+    }
+  
+    .navbar .nav {
+      padding-top: 10px; /* Add some spacing for stacked items */
+      
+    }
+    .bree-font, .bree-font a.nav-link {
+        font-size: medium; /* Slightly smaller font size for medium devices */
+        
+      }
+    .sidebar{
+      background-color: rgba(146, 142, 137, 0.15);
+      backdrop-filter: blur(10px);
+    }
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    /* Select the column that contains the title and set the order */
+    .navbar .container > .row > .col-containing-title {
+      order: -1; /* This will place it first */
+    }
+    .bree-font, .bree-font a.nav-link {
+        font-size: small; /* Even smaller font size for small devices */
+      }
+  
+    .responsive-title {
+      font-size: 1rem; /* Adjusted font size for smaller screens */
+    
+     
+    
+    }
+  }
+  
+  @media (max-width: 576px) { /* For extra small devices */
+    .responsive-title {
+      font-size: 1.25rem;
+      order: -1;
+    }
+    .bree-font, .bree-font a.nav-link {
+        font-size: smaller; /* Smallest font size for extra small devices */
+      }
+  }
+
+
+.bgsignup{
+  background-color: rgba(77, 52, 9, 0.151);
+  backdrop-filter: blur(10px);
+}
+.mamain {
+  background-color: #ebe7e0;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect Ratio (16:9) */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.glow-link {
+  color: inherit; /* Keeps the color consistent */
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.glow-link:hover {
+  color: #009688; /* Change as per your theme color */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Creates the glow effect */
+}
+.bold-text {
+  font-weight: bold;
+}
+.forumbg{
+  background-color: #B0A695;
+}
+.libg{
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .upcoming-events h2, .upcoming-events h3 {
+      font-size: 1rem; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .upcoming-events h4 {
+      font-size: 1.2rem; /* Adjust title font size for extra small screens */
+  }
+}
+
+
+.bree-font-dark{
+  font-family: 'Dosis', sans-serif;
+  color: #040301 !important;
+  font-size: large;
+}
+
+.event-month {
+  font-size: 1rem; /* Adjust the font size as needed */
+  margin-top: 2.8px;
+  margin-bottom: 0; /* Reduces space below the month */
+  text-align: center;
+  
+}
+
+.event-day {
+  font-size: 1.25rem; /* Adjust the font size as needed */
+  margin-top: 0px; /* Reduces space above the day */
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .event-month {
+      font-size: 1.25rem; /* Smaller size for tablet and mobile */
+  }
+  .event-day {
+      font-size: 1rem; /* Smaller size for tablet and mobile */
+  }
+}
+
+.btn-group-vertical { margin-right: 10px; }
+.listgroupitem{ display: flex; align-items: center; }
+.post-content { flex-grow: 1; }
+.badge { margin-left: 5px; }
+
+
+.btn-vote {
+  width: 30px; /* Set the width as you desire */
+  padding: 0; /* Remove padding to ensure the button is not too large */
+}
+.userinfo{
+  font-size: 0.9rem !important;
+}
+
+.bree-font-dark { color: #333; }
+.btn-vote { width: 40px; height: 40px; padding: 0; }
+.userinfo { font-size: 0.9em; color: #555; }
+.responsive-title { font-weight: bold; }
+.listgroupitem { align-items: flex-start; }
+.post-content { flex-grow: 1; margin-left: 10px; }
+.discussion { margin-top: 1em; }
+.carousel-inner img { height: 200px; object-fit: cover; }
+
+
+.btn-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* You can adjust the width as needed */
+  height: 60px; /* You can adjust the height as needed */
+  margin-left: 0.8rem;
+}
+
+.btn-action svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Optional: If you want to ensure text size is consistent */
+.btn-action .btn-text {
+  font-size: 0.8rem; /* Adjust the font size as needed */
+}
+
+.bold-divider {
+  border-width: 3px; /* Adjust the thickness as needed */
+}
+
